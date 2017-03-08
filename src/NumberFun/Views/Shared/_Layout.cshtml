@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="~/lib/materialize-v0.98.0/materialize/css/materialize.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
     <environment names="Development">
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
@@ -18,7 +20,7 @@
 <body>
     <header>
     <nav>
-        <div class="nav-wrapper light-blue darken-1">
+        <div class="nav-wrapper  green lighten-1">
             <a href="#" class="brand-logo center">Number Fun</a>
             <!---<ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="sass.html">Sass</a></li>
@@ -28,14 +30,70 @@
         </div>
     </nav>
     </header>
-    <main> 
-    <div class="container">
-        @RenderBody()
-       </div>
+    <main>
+        <div class="container">
+            @RenderBody()
+        </div>
 
+        <div class="parallax-container">
+            <div class="parallax"><img src="~/images/parallax3.png"></div>
+        </div>
+
+        <div class="Prime">
+            <div class="row container">
+                <h2 class="header">Prime Number</h2>
+                <p class="grey-text text-darken-3 lighten-3">The number has no divisors except itself and 1.  </p>
+            </div>
+        </div>
+
+        <div class="parallax-container">
+            <div class="parallax"><img src="~/images/parallax3.png"></div>
+        </div>
+
+        <div class="Perfect">
+            <div class="row container">
+                <h2 class="header">Perfect Number</h2>
+                <p class="grey-text text-darken-3 lighten-3">The sum of the number’s divisors except itself is the number.</p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="~/images/parallax3.png"></div>
+        </div>
+
+        <div class="Squareful">
+            <div class="row container">
+                <h2 class="header">Squareful</h2>
+                <p class="grey-text text-darken-3 lighten-3">At least one prime factor of the number is repeated.</p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="~/images/parallax3.png"></div>
+        </div>
+
+        <div class="Squarefull">
+            <div class="row container">
+                <h2 class="header"> Sqaurefull</h2>
+                <p class="grey-text text-darken-3 lighten-3">Every prime factor of the number is repeated. There is also an extra 'L' compared to the last one 'Squareful' </p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="~/images/parallax3.png"></div>
+        </div>
+
+        <div class="Palindromic">
+            <div class="row container">
+                <h2 class="header">Palindromic</h2>
+                <p class="grey-text text-darken-3 lighten-3">The digits are the same forwards and backwards  (read left-to-right or right-to-left). </p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="~/images/parallax3.png"></div>
+        </div>
+    </main>
+    </main>
     </main>
 
-    <footer class="page-footer light-blue darken-1">
+    <footer class="page-footer  green lighten-1">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -64,6 +122,9 @@
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/materialize-v0.98.0/materialize/js/materialize.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment names="Staging,Production">

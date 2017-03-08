@@ -1,4 +1,3 @@
-﻿// Write your Javascript code.
-$(document).ready(function () {
+﻿$(document).ready(function () {
     $('.parallax').parallax();
-})(jQuery);
+});
